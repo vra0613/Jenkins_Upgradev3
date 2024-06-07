@@ -7,7 +7,7 @@ job('Seed_Job_Maven') {
         scm('* * * * *')
     }
     steps {
-        maven('clean package', 'maven-samples/single-module/pom.xml')
+        mvn('clean package', 'maven-samples/single-module/pom.xml')
     }
     
 }
